@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      header {
+        background-color: #000000;
+        color: rgb(199, 188, 188);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        position: relative;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.8em;
+      }
+
+      header h2 {
+        margin: 0;
+        font-size: 1.2em;
+        color: #c7c7c7;
+        margin-top: 10px;
+      }
+
+      header img {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #4d4c4c;
+      }
+
+      nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      nav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      section {
+        padding: 50px;
+        text-align: center;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .intro {
+        background-color: #ffe8e8;
+      }
+
+      .skills {
+        background-color: #f9e2eb;
+      }
+
+      .skills h2 {
+        margin-bottom: 20px;
+      }
+
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .skill-box {
+        display: inline-block;
+        background-color: #ffffff;
+        color: #333;
+        border: 2px solid #ff5bcb;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 8px;
+        font-weight: bold;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        font-size: 1.1em;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .skill-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .projects {
+        background-color: #ffe0e0;
+      }
+
+      .contact {
+        background-color: #e2e2f9;
+      }
+
+      .resume {
+        background-color: #e2f9e2;
+        text-align: center;
+      }
+
+      .resume button {
+        background-color: #28a745;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2em;
+        transition: background-color 0.3s;
+      }
+
+      .resume button:hover {
+        background-color: #218838;
+      }
+
+      h2 {
+        color: #333;
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 1.1em;
+        line-height: 1.6;
+      }
+
+      .education {
+        background-color: #d4f0f6;
+        padding: 50px;
+        text-align: left;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .education h2 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 30px;
+        color: #333;
+      }
+
+      .education-entry {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .education-entry h3 {
+        margin: 0;
+        font-size: 1.5em;
+        color: #030303;
+      }
+
+      .education-entry p {
+        font-size: 1.1em;
+        margin: 5px 0;
+        line-height: 1.6;
+      }
+
+      .education-entry strong {
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Aswini Venkatesan</h1>
+        <h2>Aspiring Software Developer | CSE Undergrad at VIT Chennai</h2>
+      </div>
+      <img src="pic.jpg" alt="Aswini Venkatesan" />
+    </header>
+
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="intro">
+      <h2>About Me!</h2>
+      <p>
+        Hi! I'm Aswini Venkatesan, a Computer Science Under Graduate at VIT
+        Chennai with experience in various languages like
+        <strong>Python, Java, C C++, MATLAB, HTML and CSS</strong>. I'm an
+        aspiring Software Developer fueled by a passion for innovation and
+        problem-solving. Looking forward to work with like-minded professionals,
+        mentors and enthusiasts.
+      </p>
+    </section>
+
+    <section id="education" class="education">
+      <h2>Education</h2>
+      <div class="education-entry">
+        <h3>Vellore Institute of Technology (VIT), Chennai</h3>
+        <p>
+          <strong>Degree:</strong> Bachelor of Technology in Computer Science
+          and Engineering
+        </p>
+        <p>
+          <strong>Coursework:</strong> Data Structures, Algorithms, Database
+          Systems, Operating Systems, Computer Networks, Cloud Computing, Web
+          Programming
+        </p>
+        <p><strong>Year:</strong> 2023 - 2027</p>
+        <p><strong>CGPA:</strong> 8.80/10</p>
+      </div>
+
+      <div class="education-entry">
+        <h3>Prince Srivari Vidyalaya, Chennai</h3>
+        <p><strong>Grade:</strong> 1 - 12</p>
+        <p>
+          <strong>Coursework:</strong> Python, MySQL, Probability, Statistics,
+          Calculus, English
+        </p>
+        <p><strong>Year:</strong> 2023</p>
+        <p><strong>Percentage:</strong> 94.8%</p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">Python</div>
+        <div class="skill-box">Java</div>
+        <div class="skill-box">C</div>
+        <div class="skill-box">C++</div>
+        <div class="skill-box">MATLAB</div>
+        <div class="skill-box">Canva</div>
+        <div class="skill-box">R</div>
+        <div class="skill-box">Technical Writing</div>
+        <div class="skill-box">Time Management</div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <p>
+        <strong
+          >Project 1: Care and Cure: Hospital Management System using Python and
+          MySQL</strong
+        >
+      </p>
+      <p><a href="hms.txt" target="_blank">Open Project 1 Details</a></p>
+      <p><strong>Project 2: Peer to Peer File Sharing System in C++</strong></p>
+      <p><a href="https://1drv.ms/w/c/f007c23be9c06a7e/EZ0kP4-WCUVGrQG4FJr4FDABmA1UKSLZb-o-bqcQKd-9Mw?e=PmgcJ5" target="_blank">Open Project 2 Details</a></p>
+      <p>
+        <strong
+          >Project 3: Traffic Light Simulation System using Arduino and
+          C++</strong
+        >
+        <p><a href="traffic_light.txt" target="_blank">Open Project 3 Details</a></p>
+      </p>
+    </section>
+
+    <section id="resume" class="resume">
+      <h2>Resume</h2>
+      <p>Download my resume by clicking the link below:</p>
+      <a href="aswini_resume.pdf" download="Aswini_Venkatesan_Resume">
+        <button>Download Resume</button>
+      </a>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to reach out to me at:</p>
+      <p>
+        Mobile Number:
+        <a href="tel:+9600040318">9600040318</a>
+      </p>
+      <p>
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/aswini-venkatesan-308a77274/"
+          target="_blank"
+          >Aswini Venkatesan</a
+        >
+      </p>
+      <p>
+        Email:
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=aswinivenkatesan23@gmail.com"
+          target="_blank"
+          >aswinivenkatesan23@gmail.com</a
+        >
+      </p>
+    </section>
+  </body>
+</html>
