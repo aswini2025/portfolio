@@ -27,8 +27,8 @@ Coral Reef Health Classifier using CNN
 A deep learning model built with TensorFlow to classify coral reef images as healthy or bleached. Included Grad-CAM and t-SNE visualizations for model explainability.  
 Tech Stack: Python, TensorFlow, Matplotlib, Scikit-learn, Kaggle
 
-ExpenseTracker Pro - Expense Tracking Website 
-Developed a full-stack web application that helps users track daily expenses with visual insights. The platform allows users to add, categorize, and view their expenditures with dynamic pie charts and monthly summaries. Built with HTML, CSS and JavaScript on the frontend, and Node.js with Express.js on the backend. Implemented secure user authentication with bcrypt and used MySQL for persistent data storage. 
+ExpenseTracker Pro - Expense Tracking Website
+Developed a full-stack web application that helps users track daily expenses with visual insights. The platform allows users to add, categorize, and view their expenditures with dynamic pie charts and monthly summaries. Built with HTML, CSS and JavaScript on the frontend, and Node.js with Express.js on the backend. Implemented secure user authentication with bcrypt and used MySQL for persistent data storage.
 Tech Stack: HTML, CSS, Node.js, Express.js, MySQL, VSCode
 
 Thread-Synchronized Traffic Simulation  
