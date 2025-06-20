@@ -36,7 +36,7 @@ A Python-based multithreaded simulation of a four-way traffic intersection, demo
 Tech Stack: Python, Pygame, OOP, OS Concepts
 
 Traffic Light Simulation System (Hardware) 
-Developed a hardware-based traffic light control system using Arduino, LEDs, and wiring to simulate real-world traffic signal operations. Implemented functionality for sequential light transitions with timing delays and ensured synchronized control for four traffic lanes. 
+Developed a hardware-based traffic light control system using Arduino, LEDs, and wiring to simulate real-world traffic signal operations. Implemented functionality for sequential light transitions with timing delays and ensured synchronized control for four traffic lanes.  
 Tech Stack: Arduino, C/C++, Electronics (LEDs, Wiring)
 
 Hospital Management System  
