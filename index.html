@@ -13,6 +13,10 @@
         background-color: #f4f4f9;
         color: #333;
       }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 70px;
+      }
 
       header {
         background-color: #000000;
@@ -50,10 +54,14 @@
       }
 
       nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
         display: flex;
         justify-content: center;
         background-color: #4d4c4c;
-        flex-wrap: wrap; /* Enable wrapping */
+        flex-wrap: wrap;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Optional shadow for effect */
       }
 
       nav a {
@@ -220,6 +228,7 @@
         margin-bottom: 20px;
         padding: 15px;
         background-color: #ffffff;
+        border: 2px solid #00d0ff;
         border-radius: 8px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
@@ -355,6 +364,44 @@
       .profile-box:hover {
         transform: translateY(-5px);
       }
+      .contact {
+        background-color: #e2e2f9;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .contact-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 20px;
+      }
+
+      .contact-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 15px 25px;
+        border: 2px solid #7871f4;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #000;
+        width: 250px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .contact-box img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+      }
+
+      .contact-box:hover {
+        transform: translateY(-5px);
+      }
 
       /* Responsive Styles */
       @media (max-width: 768px) {
@@ -423,24 +470,33 @@
     <nav>
       <a href="#about">About Me</a>
       <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#hackathons">Hackathons</a>
+      <a href="#resume">Resume</a>
+      <a href="#profiles">Tech Handles</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <section id="about" class="intro">
       <h2>About Me!</h2>
       <p>
-        Hi! I'm Aswini Venkatesan, a passionate Computer Science undergraduate
-        at VIT Chennai with hands-on experience in programming languages like
-        <strong>Python, Java, C, C++, MATLAB, HTML, CSS and JavaScript</strong>.
-        I specialize in developing efficient, user-centric solutions and enjoy
-        working across both front-end and back-end technologies. With a strong
-        foundation in software development and a drive for continuous learning,
-        I'm eager to collaborate with professionals, mentors and innovators to
-        build impactful tech solutions.
+        Hi! I'm Aswini Venkatesan, a Computer Science undergraduate at VIT
+        Chennai with deep interests in <strong>Cloud Computing</strong>,
+        <strong>Artificial Intelligence</strong> and
+        <strong>Full-Stack Web Development</strong>, where I enjoy combining
+        innovation with practical problem-solving. I’ve designed and built
+        responsive web applications with intuitive user interfaces, secure
+        backend logic and smooth client-server interaction to ensure a seamless
+        user experience. I’m equally enthusiastic about AI, exploring machine
+        learning models, natural language understanding and real-world
+        data-driven applications. Technically, I'm proficient in a wide range of
+        programming languages including
+        <strong>Python, Java, C/C++, HTML, CSS and JS</strong>. I'm excited
+        about collaborating on impactful projects and continuing to grow as a
+        software developer by learning from experienced professionals, mentors
+        and like-minded peers.
       </p>
     </section>
 
@@ -523,13 +579,17 @@
         <div class="skill-box">Python</div>
         <div class="skill-box">Java</div>
         <div class="skill-box">C | C++</div>
+        <div class="skill-box">MySQL</div>
         <div class="skill-box">MATLAB</div>
         <div class="skill-box">Canva</div>
         <div class="skill-box">R</div>
+        <div class="skill-box">LINUX</div>
         <div class="skill-box">IBM Cloud</div>
         <div class="skill-box">GitHub</div>
         <div class="skill-box">Postman API</div>
         <div class="skill-box">Project Libre</div>
+        <div class="skill-box">Tableau</div>
+        <div class="skill-box">RStudio</div>
         <div class="skill-box">LTSpice</div>
         <div class="skill-box">Creative Thinking</div>
         <div class="skill-box">Problem Solving</div>
@@ -733,28 +793,41 @@
 
     <section id="contact" class="contact">
       <h2>Contact Me</h2>
-      <p>If you'd like to get in touch, feel free to reach out to me at:</p>
-      <p>
-        Mobile Number:
-        <a href="tel:+9600040318">9600040318</a>
-      </p>
-      <p>
-        LinkedIn:
+      <div class="contact-container">
+        <a href="tel:+9600040318" class="contact-box">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/159/159832.png"
+            alt="Phone"
+          />
+          <span>+91 9600040318</span>
+        </a>
+
         <a
           href="https://www.linkedin.com/in/aswini-venkatesan-308a77274/"
           target="_blank"
-          >Aswini Venkatesan</a
+          class="contact-box"
         >
-      </p>
-      <p>
-        Email:
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="LinkedIn"
+          />
+          <span>Aswini Venkatesan</span>
+        </a>
+
         <a
           href="https://mail.google.com/mail/?view=cm&to=aswinivenkatesan23@gmail.com"
           target="_blank"
-          >aswinivenkatesan23@gmail.com</a
+          class="contact-box"
         >
-      </p>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+            alt="Email"
+          />
+          <span>aswinivenkatesan23@gmail.com</span>
+        </a>
+      </div>
     </section>
+
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         document.querySelectorAll(".project-box").forEach((box) => {
