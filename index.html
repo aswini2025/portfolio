@@ -91,6 +91,53 @@
         flex-wrap: wrap;
         justify-content: center;
       }
+      .projects-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 15px;
+      }
+      .project-box {
+        background-color: #ffffff;
+        color: #333;
+        border: 2px solid #ea213b;
+        border-radius: 10px;
+        padding: 15px 20px;
+        margin: 10px;
+        font-size: 1em;
+        cursor: pointer;
+        width: 300px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        text-align: left;
+        position: relative;
+      }
+
+      .project-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+
+      .project-title {
+        font-weight: bold;
+        color: black;
+        font-size: 1.1em;
+        text-align: center;
+      }
+
+      .project-desc {
+        display: none;
+        margin-top: 10px;
+        font-size: 0.95em;
+        color: #444;
+      }
+
+      .project-tech {
+        margin-top: 5px;
+        font-size: 0.95em;
+        color: black;
+        font-weight: bold;
+      }
 
       .skill-box {
         background-color: #ffffff;
@@ -114,24 +161,8 @@
         background-color: #ffe0e0;
       }
 
-      .projects-content {
-        text-align: center; /* Center content in projects */
-        margin: 20px 0;
-      }
-
-      .projects-content a {
-        display: inline-block; /* Center links inline */
-        margin: 5px 10px;
-        padding: 10px 20px;
-        background-color: #ff5bcb;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-      }
-
       .projects-content a:hover {
-        background-color: #e54aa9;
+        background-color: #e54a59;
       }
 
       .contact {
@@ -142,21 +173,24 @@
       .resume {
         background-color: #e2f9e2;
         text-align: center;
+        padding: 20px;
       }
 
       .resume button {
-        background-color: #28a745;
+        background-color: #1bbd41;
         color: white;
         padding: 10px 20px;
-        border: none;
+        border: 2px solid #000000;
+        outline: none;
         border-radius: 5px;
         cursor: pointer;
         font-size: 1em;
-        transition: background-color 0.3s;
+        transition: background-color 0.3s, border-color 0.3s;
       }
 
       .resume button:hover {
         background-color: #218838;
+        border-color: #19692c;
       }
 
       h2 {
@@ -176,11 +210,11 @@
         margin: 10px;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    
-    .education h2 {
+      }
+
+      .education h2 {
         text-align: center; /* Centers the heading */
-    }
+      }
 
       .education-entry {
         margin-bottom: 20px;
@@ -194,6 +228,132 @@
         margin: 0;
         font-size: 1.2em;
         color: #030303;
+      }
+      .experience {
+        background-color: #f9f0e2;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .experience h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .experience-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+      }
+
+      .experience-box {
+        background-color: #ffffff;
+        border: 2px solid #f79456;
+        border-radius: 10px;
+        width: 300px;
+        padding: 15px;
+        text-align: left;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        cursor: default;
+      }
+
+      .experience-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .experience-title {
+        font-weight: bold;
+        color: black;
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .experience-desc {
+        font-size: 0.95em;
+        color: #444;
+        line-height: 1.5;
+      }
+
+      .experience-tech {
+        margin-top: 10px;
+        color: #444;
+      }
+      .hackathons {
+        background-color: #f4f4fc;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .hackathon-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* centers the items */
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .hackathon-entry {
+        background-color: #ffffff;
+        border: 2px solid #4e73df;
+        border-radius: 12px;
+        padding: 20px;
+        width: 340px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        text-align: left;
+      }
+
+      .hackathon-entry:hover {
+        transform: translateY(-5px);
+      }
+
+      .hackathon-entry h3 {
+        color: #2c3e99;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+      .profiles {
+        padding: 40px 20px;
+        background-color: #f4f4fc;
+        text-align: center;
+      }
+
+      .profile-container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      .profile-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 15px 25px;
+        border: 2px solid #4e73df;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #000;
+        width: 160px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .profile-box img {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+      }
+
+      .profile-box:hover {
+        transform: translateY(-5px);
       }
 
       /* Responsive Styles */
@@ -264,121 +424,347 @@
       <a href="#about">About Me</a>
       <a href="#education">Education</a>
       <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#hackathons">Hackathons</a>
       <a href="#contact">Contact</a>
     </nav>
 
     <section id="about" class="intro">
       <h2>About Me!</h2>
       <p>
-        Hi! I'm Aswini Venkatesan, a Computer Science Under Graduate at VIT
-        Chennai with experience in various languages like
-        <strong>Python, Java, C C++, MATLAB, HTML and CSS</strong>. I'm an
-        aspiring Software Developer fueled by a passion for innovation and
-        problem-solving. Looking forward to work with like-minded professionals,
-        mentors and enthusiasts.
+        Hi! I'm Aswini Venkatesan, a passionate Computer Science undergraduate
+        at VIT Chennai with hands-on experience in programming languages like
+        <strong>Python, Java, C, C++, MATLAB, HTML, CSS and JavaScript</strong>.
+        I specialize in developing efficient, user-centric solutions and enjoy
+        working across both front-end and back-end technologies. With a strong
+        foundation in software development and a drive for continuous learning,
+        I'm eager to collaborate with professionals, mentors and innovators to
+        build impactful tech solutions.
       </p>
     </section>
 
-  <section id="education" class="education">
-    <h2>Education</h2>
-    <div class="education-entry">
-      <h3>Vellore Institute of Technology (VIT), Chennai</h3>
+    <section id="education" class="education">
+      <h2>Education</h2>
+      <div class="education-entry">
+        <h3>Vellore Institute of Technology (VIT), Chennai</h3>
+        <p>
+          <strong>Degree:</strong> Bachelor of Technology in Computer Science
+          and Engineering
+        </p>
+        <p>
+          <strong>Coursework:</strong> Data Structures and Algorithms, Database
+          Systems, Operating Systems, Computer Networks, Cloud Computing, Web
+          Programming, Blockchain Technology, Artificial Intelligence, Software
+          Engineering, AWS
+        </p>
+        <p><strong>Year:</strong> 2023 - 2027</p>
+        <p><strong>CGPA:</strong> 8.88/10</p>
+      </div>
+    </section>
+
+    <section id="experience" class="experience">
+      <h2>Experience & Volunteering</h2>
+      <div class="experience-container">
+        <div class="experience-box">
+          <div class="experience-title">
+            Intern at Edunet Foundation-IBMSkillsBuild
+          </div>
+          <div class="experience-desc">
+            Selected via the AICTE internship portal, a Government of India
+            initiative. Currently undergoing indus try curated training on AI,
+            Cybersecurity and Cloud Computing through IBM SkillsBuild, with
+            hands-on assignments and assessments aligned to real-world
+            applications.
+            <div class="experience-tech">
+              <strong>Duration:</strong> July 2025 - August 2025
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-box">
+          <div class="experience-title">
+            Tech Contributor at GirlScript Summer of Code
+          </div>
+          <div class="experience-desc">
+            Contributed to multiple open-source repositories by fixing bugs,
+            enhancing features and improving docu mentation. Collaborated with
+            project maintainers and peers using Git and GitHub workflows.
+            <div class="experience-tech">
+              <strong>Duration:</strong> July 2025 - September 2025
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-box">
+          <div class="experience-title">Creative Department Member</div>
+          <div class="experience-desc">
+            Volunteering as a creative department member at CULTURE IT, a
+            student club at VIT Chennai. Designed promotional posters using
+            Canva, coordinated college club events and managed responsibilities
+            un der tight deadlines, demonstrating strong teamwork, communication
+            and time management skills. Received a score of 92/100 for overall
+            performance in sophomore year
+            <div class="experience-tech">
+              <strong>Duration:</strong> Feb 2024 - Present
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Close experience-container -->
+    </section>
+
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">Python</div>
+        <div class="skill-box">Java</div>
+        <div class="skill-box">C | C++</div>
+        <div class="skill-box">MATLAB</div>
+        <div class="skill-box">Canva</div>
+        <div class="skill-box">R</div>
+        <div class="skill-box">IBM Cloud</div>
+        <div class="skill-box">GitHub</div>
+        <div class="skill-box">Postman API</div>
+        <div class="skill-box">Project Libre</div>
+        <div class="skill-box">LTSpice</div>
+        <div class="skill-box">Creative Thinking</div>
+        <div class="skill-box">Problem Solving</div>
+        <div class="skill-box">Technical Writing</div>
+        <div class="skill-box">Time Management</div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Projects (Click to know more)</h2>
+      <div class="projects-container">
+        <div class="project-box">
+          <div class="project-title">
+            Coral Reef Health Classifier using CNN
+          </div>
+          <div class="project-desc">
+            Built a deep learning model to classify coral reef images as healthy
+            or bleached. Used Grad-CAM and t-SNE for interpretability. Evaluated
+            performance with ROC and confusion matrix.
+            <div class="project-tech">
+              Tech Stack: Python, TensorFlow, Matplotlib, Scikit-learn, Seaborn,
+              Kaggle
+            </div>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <div class="project-title">AI-Powered Contract Insight Tool</div>
+          <div class="project-desc">
+            Built an AI-powered tool to analyze and interpret legal contracts.
+            The application enables users to upload contracts and receive
+            automatic summaries, highlighted clauses, and risk assessments.
+            Integrated natural language processing through the Cohere API to
+            identify critical or missing clauses and support question-answering
+            based on contract content. Features an interactive frontend UI and a
+            robust FastAPI backend for handling inference and logic.
+            <div class="project-tech">
+              Tech Stack: Python, FastAPI, Cohere API, HTML/CSS/JS, VSCode,
+              GitHub
+            </div>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <div class="project-title">ExpenseTracker Pro</div>
+          <div class="project-desc">
+            Developed a full-stack expense tracking web application that allows
+            users to log, categorize, and visualize expenditures. Implemented
+            secure user authentication using bcrypt hashing, and managed
+            persistent data storage with MySQL. The platform features dynamic
+            dashboards using Chart.js to display spending patterns through pie
+            charts and monthly summaries. Ensured a smooth user experience
+            through modular Express.js routes and responsive design.,
+            <div class="project-tech">
+              Tech Stack: HTML, CSS, Node.js, Express.js, MySQL, Chart.js,
+              bcrypt
+            </div>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <div class="project-title">
+            Thread Synchronization and Semaphore-Controlled Traffic Simulation
+          </div>
+          <div class="project-desc">
+            Designed and implemented a real-time 4-way traffic intersection
+            simulation using Python. Utilized multithreading and semaphore-based
+            control to manage vehicle flow. Integrated process synchronization,
+            mutual exclusion, and condition-based signalling to ensure safe and
+            fair signal switching. The system dynamically detects and
+            prioritizes emergency vehicles through intelligent signal control
+            logic.
+            <div class="project-tech">
+              Tech Stack: Python, Multithreading, Semaphores, Pygame, OOP,
+              Event-driven Programming
+            </div>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <div class="project-title">
+            Care and Cure - Hospital Management System
+          </div>
+          <div class="project-desc">
+            Developed a robust console-based hospital management system using
+            Python and MySQL. The application manages patient
+            admission/discharge, staff record handling, billing, and user
+            authentication. Features include role-based access for doctors,
+            nurses, and workers, as well as secure login, password management,
+            and automated patient ID generation.
+            <div class="project-tech">Tech Stack: Python, MySQL, CLI</div>
+          </div>
+        </div>
+
+        <div class="project-box">
+          <div class="project-title">
+            Traffic Light Simulation using Arduino
+          </div>
+          <div class="project-desc">
+            Developed a hardware-based simulation of a real-world traffic light
+            system using Arduino. Coded logic in C++ to replicate timed signal
+            changes with LED sequences for different lanes. The system reflects
+            actual road behavior and introduces basic concepts of embedded
+            systems, signal control and timing precision using hardware
+            programming.
+            <div class="project-tech">
+              Tech Stack: C++, Arduino, Hardware Programming
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="hackathons" class="hackathons">
+      <h2>Hackathons</h2>
+      <div class="hackathon-container">
+        <div class="hackathon-entry">
+          <h3>Flipkart GRiD 7.0 - National Hackathon</h3>
+          <p>
+            Qualified through the initial two rounds of Flipkart GRiD 7.0, a
+            prestigious national hackathon.
+          </p>
+          <strong>Round 1:</strong> Resume Screening<br /><br />
+          <strong>Round 2:</strong> DSA Assessment - 3 questions in 90 mins
+          <br /><br />
+          <strong>Round 3 (Semi-Finals):</strong> DSA Assessment - 3 questions
+          in 60 mins
+          <p>
+            Gained valuable experience in high-pressure competitive coding
+            environments and improved my problem-solving efficiency under time
+            constraints.
+          </p>
+        </div>
+
+        <div class="hackathon-entry">
+          <h3>Odoo Nationwide Hackathon 2025</h3>
+          <p>
+            Competed in a 10-hour national hackathon organized by Odoo. Among
+            the three given domains, our team chose to build
+            <strong>StackIt</strong>, a Q&A-style platform inspired by Stack
+            Overflow. The platform enables users to post coding or tech-related
+            doubts, receive answers and upvote/downvote solutions. Implemented
+            user authentication, question categorization and answer ranking. The
+            project emphasized clean UI/UX and fast backend communication using
+            modern web technologies. This experience sharpened my skills in
+            collaborative problem-solving, rapid development and working within
+            strict time constraints.
+          </p>
+        </div>
+
+        <div class="hackathon-entry">
+          <h3>Nexathon 2025 - VIT Chennai</h3>
+          <p>
+            Participated in a 24-hour inter-college technical hackathon hosted
+            at VIT Chennai. Built a
+            <strong>Blood Test Report Analyzer and Feedback System</strong>
+            designed to identify abnormal values in blood test reports and
+            recommend personalized health tips and foods. Utilized form
+            validation, data visualization and basic health logic mapping for
+            real-time report feedback.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="resume">
+      <h2>Resume</h2>
+      Download my resume by clicking the link below!<br /><br />
+      <a href="aswini_resume (1).pdf" download="Aswini_Venkatesan_Resume">
+        <button>Download Resume</button>
+      </a>
+    </section>
+
+    <section id="profiles" class="profiles">
+      <h2>Tech Handles</h2>
+      <div class="profile-container">
+        <a
+          href="https://github.com/aswini2025"
+          target="_blank"
+          class="profile-box"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="GitHub"
+          />
+          <span>GitHub</span>
+        </a>
+
+        <a
+          href="https://www.geeksforgeeks.org/user/aswinivenkgjst/"
+          target="_blank"
+          class="profile-box"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg"
+            alt="GeeksforGeeks"
+          />
+          <span>GeeksforGeeks</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to reach out to me at:</p>
       <p>
-        <strong>Degree:</strong> Bachelor of Technology in Computer Science
-        and Engineering
+        Mobile Number:
+        <a href="tel:+9600040318">9600040318</a>
       </p>
       <p>
-        <strong>Coursework:</strong> Data Structures, Algorithms, Database
-        Systems, Operating Systems, Computer Networks, Cloud Computing, Web
-        Programming
+        LinkedIn:
+        <a
+          href="https://www.linkedin.com/in/aswini-venkatesan-308a77274/"
+          target="_blank"
+          >Aswini Venkatesan</a
+        >
       </p>
-      <p><strong>Year:</strong> 2023 - 2027</p>
-      <p><strong>CGPA:</strong> 8.87/10</p>
-    </div>
-
-    <div class="education-entry">
-      <h3>Prince Srivari Vidyalaya, Chennai</h3>
-      <p><strong>Grade:</strong> 12</p>
       <p>
-        <strong>Coursework:</strong> Python, MySQL, Probability, Statistics,
-        Calculus, English
+        Email:
+        <a
+          href="https://mail.google.com/mail/?view=cm&to=aswinivenkatesan23@gmail.com"
+          target="_blank"
+          >aswinivenkatesan23@gmail.com</a
+        >
       </p>
-      <p><strong>Year:</strong> 2023</p>
-      <p><strong>Percentage:</strong> 94.8%</p>
-    </div>
-  </section>
-
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <div class="skill-box">HTML</div>
-      <div class="skill-box">CSS</div>
-      <div class="skill-box">JavaScript</div>
-      <div class="skill-box">Python</div>
-      <div class="skill-box">Java</div>
-      <div class="skill-box">C</div>
-      <div class="skill-box">C++</div>
-      <div class="skill-box">MATLAB</div>
-      <div class="skill-box">Canva</div>
-      <div class="skill-box">R</div>
-      <div class="skill-box">Technical Writing</div>
-      <div class="skill-box">Time Management</div>
-    </div>
-  </section>
-
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <p>
-      <strong
-        >Project 1: Care and Cure: Hospital Management System using Python and
-        MySQL</strong
-      >
-    </p>
-    <p><a href="hms.txt" target="_blank">Open Project 1 Details</a></p>
-    <p><strong>Project 2: Peer to Peer File Sharing System in C++</strong></p>
-    <p><a href="https://1drv.ms/w/c/f007c23be9c06a7e/EZ0kP4-WCUVGrQG4FJr4FDABmA1UKSLZb-o-bqcQKd-9Mw?e=PmgcJ5" target="_blank">Open Project 2 Details</a></p>
-    <p>
-      <strong
-        >Project 3: Traffic Light Simulation System using Arduino and
-        C++</strong
-      >
-      <p><a href="traffic_light.txt" target="_blank">Open Project 3 Details</a></p>
-    </p>
-  </section>
-
-  <section id="resume" class="resume">
-    <h2>Resume</h2>
-    <p>Download my resume by clicking the link below:</p>
-    <a href="aswini_resume.pdf" download="Aswini_Venkatesan_Resume">
-      <button>Download Resume</button>
-    </a>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>If you'd like to get in touch, feel free to reach out to me at:</p>
-    <p>
-      Mobile Number:
-      <a href="tel:+9600040318">9600040318</a>
-    </p>
-    <p>
-      LinkedIn:
-      <a
-        href="https://www.linkedin.com/in/aswini-venkatesan-308a77274/"
-        target="_blank"
-        >Aswini Venkatesan</a
-      >
-    </p>
-    <p>
-      Email:
-      <a
-        href="https://mail.google.com/mail/?view=cm&to=aswinivenkatesan23@gmail.com"
-        target="_blank"
-        >aswinivenkatesan23@gmail.com</a
-      >
-    </p>
-  </section>
-</body>
+    </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".project-box").forEach((box) => {
+          box.addEventListener("click", () => {
+            const desc = box.querySelector(".project-desc");
+            desc.style.display =
+              desc.style.display === "block" ? "none" : "block";
+          });
+        });
+      });
+    </script>
+  </body>
 </html>
-
